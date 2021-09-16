@@ -22,3 +22,21 @@ void Item::display() {
   cout << "Item : " << itemCode << endl;
   cout << "Discounted Price " << discountedPrice() << endl;
 }
+ Item::Item()
+ {
+  itemCode = 0;
+  unitPrice = 0.0;
+  discount = 0.0;  
+
+ }
+Item::Item(int ic, float up )
+{
+  itemCode = ic;
+  unitPrice = up;
+
+}
+Item::~Item()
+{
+  cout<<"Destructor Called"<<endl;
+
+}
